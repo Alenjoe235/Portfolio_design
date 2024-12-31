@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="p:domain_verify" content="0d79d2cc60957280121bfcde7b6f9d7c"/>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <title>Projects</title>
+    </head>
+    <body>
+        <!-- Navbar (same as other pages) -->
+        <nav class="navbar navbar-expand-lg sticky-top">
+            <!-- ...existing navbar code... -->
+        </nav>
+
+        <!-- Projects Section -->
+        <section class="projects-section py-5">
+            <div class="container">
+                <h1 class="text-center mb-5">My Projects</h1>
+                
+                <!-- Filter Buttons -->
+                <div class="filter-buttons text-center mb-4">
+                    <button class="btn btn-outline-primary active" data-filter="all">All</button>
+                    <button class="btn btn-outline-primary" data-filter="web">Web Development</button>
+                    <button class="btn btn-outline-primary" data-filter="design">Design</button>
+                </div>
+
+                <!-- Project Cards -->
+                <div class="row g-4" id="project-grid">
+                    <!-- Web Development Project -->
+                    <div class="col-md-6 col-lg-4 project-item" data-category="web">
+                        <div class="card project-card">
+                            <img src="assets/images/project_1.png" class="card-img-top" alt="Project 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Bark-Translator</h5>
+                                <p class="card-text">A useless project which is mainly for an entertainment purpose which translates the bark of the dog to human readable text and find the mood of the dog</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="#" class="btn btn-sm btn-outline-primary">View Demo</a>
+                                        <a href="https://github.com/Alenjoe235/useless_project_temp" class="btn btn-sm btn-outline-secondary">Source Code</a>
+                                    </div>
+                                    <small class="text-muted">Web Development</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Design Project -->
+                    <div class="col-md-6 col-lg-4 project-item" data-category="design">
+                        <div class="card project-card">
+                            <img src="assets/images/project_2.jpeg" class="card-img-top" alt="Project 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Brochure Design</h5>
+                                <p class="card-text">Brochure for the ICCC 2025 - 6th International Conference on
+                                    Control, Communication, and Computing, which will take place at the College of Engineering Trivandrum from May 23-25, 2025.
+                                    ICCC 2025 brings together researchers, practicing engineers, faculty, and students to explore the latest Control, Communication, and Computing advancements. This biennial conference is jointly organized by the Departments of Electrical Engineering, Electronics and Communication Engineering, and Computer Science and Engineering of College of Engineering Trivandrum.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="#" class="btn btn-sm btn-outline-primary">View Project</a>
+                                    </div>
+                                    <small class="text-muted">Design</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Add more project cards as needed -->
+                </div>
+            </div>
+        </section>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
