@@ -208,3 +208,16 @@ footer {
         padding: 1.5rem;
     }
 }
+navbar-toggler {
+    padding: 0.5rem;
+    border: 1px solid var(--primary-color);
+}
+
+.navbar-toggler-icon img {
+    width: 30px;
+    height: 30px;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
